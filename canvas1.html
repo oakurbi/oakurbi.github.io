@@ -1,0 +1,63 @@
+<!Doctype HTML>
+<html>
+<head> Drawing Graphics with canvas </head>
+<title> Graphics3 - Canvas1 </title>
+
+<body>
+<h1> Canvas Element </h1>
+<p> The HTML <'canvas'> element is used to draw graphics on a web page. - multicolor rectangle and multicolor text</P>
+
+<h2> Methods </h2>
+<p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+
+<canvas id='myCanvas' width='200' height='200' > </canvas>
+
+    <script>
+        var c = document.getElementById('myCanvas');
+        var ctx = c.getContect("2d");
+        ctx.font = '30px Arial';
+        ctx.fillText('Hello World',10,50);
+    </script>
+    
+<canvas id='myCanvas1' width='300' height='200' > </canvas>
+
+    <script>
+        var c = document.getElementById('myCanvas1');
+        var ctx = c.getContect("2d");
+        ctx.font = '40px Arial';
+        ctx.strokeText('Hello World',10,50);
+    </script>
+    
+<!-- Make another canvas with diffrent text and diffrent color -->
+
+    <canvas id='myCanvas2' width='300' height='200' > </canvas>
+
+    <script>
+        var c = document.getElementById('myCanvas2');
+        var ctx = c.getContect("2d");
+        ctx.font = '40px Arial';
+        ctx.fillstyle="red";
+        ctx.strokeText('Hello World',10,50);
+    </script>
+    
+<hr>
+    <canvas id="path" width="400" height="200" style="border:1px solid grey;"></canvas>
+        <script>
+        //Create a canvas
+        const canvas = document.getElementby Id("path");
+        const ctx = canvas.getContext("2d");
+        
+        // Define a new path:
+        ctx.beginPath();
+        
+        // Define a start path:
+        ctx.moveTo(0,0);
+        
+        // Define a end point:
+        ctx.lineTo(200,100);
+        
+        // Draw it
+        ctx.stroke();
+        
+        
+        </script>

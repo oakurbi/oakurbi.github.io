@@ -1,0 +1,100 @@
+<!DOCTYPE html>     <!-- Start with a decloration -->
+ <html>              <!-- define the whole document -->
+ <!-- This page we are designing a form to make an appointment/contact with you -->
+ <head>
+    <title> Favorites</title>
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+
+<body>
+    <nav style='background-color:yellow; text-align:center; font-weight:bold;'>
+    <a href='p1_aboutme.html'> About me </a>  &nbsp &nbsp &nbsp
+    <a href='p2_Hobby.html'> My Hobbies </a>  &nbsp &nbsp &nbsp
+    <a href='p3_portfolio.html'> Portfolio </a>  &nbsp &nbsp &nbsp
+    <a href='p4_favorites.html'> Favorites </a>  &nbsp &nbsp &nbsp
+    <a href='p5_form.html'> Contact me </a>  &nbsp &nbsp &nbsp
+    </nav>
+    
+<h1 style='text-align:center';>My contact form </h1>
+    <h2 style='text-align:center';> This is a way to contact me</h2>
+    
+    <form>
+        <label> First Name: <input type='text'>   </label>    <br> <br>
+        
+        <label> Last name: <input type='text'>   </label>    <br> <br>
+        
+        <p> <b> Best way of Contact </b> </p>
+        
+        <label> What do you prefer? </label> &nbsp &nbsp &nbsp
+        
+        <select>
+                <option> Phone Call </option>
+                <option> Video Call </option>
+                <option> Email </option>
+                <option> In person Meeting </option>
+                <option> SMS </option>
+                <option> Post Mail </option>
+            </select>
+            
+        <br><br><br>
+        
+        <!-- Radio Type Menu -->
+        <fieldset>
+            <legend> Which office is closest to you? (choose one) </legend>
+                    <input type = 'radio'>
+                        <label> Chicago - Nortside </label>
+                     <input type = 'radio'>
+                        <label> Chicago - Southside </label>
+                     <input type = 'radio'>
+                        <label> Chicago - Downtown </label>
+                     <input type = 'radio'>
+                        <label> Chicago - Skokie </label>
+                        
+        </fieldset> <br> <br>
+        
+        
+            <!--- Make a Label to take the date of visit from the user-->
+            <label> Date of Visit: </label>
+                <input type='date'>   <br> <br>
+                
+            <label> Time of Appoinment: </label>
+                <input type='time'>    <br> <br<
+                
+            <!-- Attaching a file -->
+            <label> Attach your Business Plan/Resume: </label>
+            <br> <br> <input type='File'> <br> <br>
+            
+            
+            <!-- Input a number -->
+            <label> How Long do you want to meet for: </label>
+                <input type='number' min='1' max='45'> minutes <br> <br>
+                
+            <!-- Input a color type -->
+            <label> Select your favorite color swag: </label>
+                <input type = 'color'> <br> <br>
+                
+            <!--Make two labels to get phone number and email -->
+            
+            <!--Email input-->
+            <label> Enter your email address: </label>
+                <input type='email' placeholder='johnsmith@gmail.com'>
+                
+            <label> Enter your contact number: </label>
+                <input type='email' placeholder='123.123.1234' pattern='[0-9] {3}.[0-9]{3}.[0-9]{4}' required>
+                
+            <select>
+                <option> Cell </option>
+                <option> Home </option>
+                <option> Work </option>
+            </select>
+            
+        <!-- Creating a sumit & Reset button -->
+        <input type='Submit' value='Submit'> &nbsp &nbsp &nbsp
+        <input type='reset' value='Reset'>
+        
+        </form>
+        
+</body>
+</html>

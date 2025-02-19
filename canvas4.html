@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Drawing Graphics</title>
+</head>
+<body>
+<h1> HTML5 Canvas</h1>
+<canvas  id='path' width='400' height='400' style='border:1px solid grey;'> </canvas>
+<script>
+
+//Canvas
+const canvas = document.getElementById("path")
+const ctx = canvas.getContext("2d");
+//Define a New Path
+ctx.beginPath();
+
+//Define a start pointer
+ctx.moveTo(0,0)
+
+//Define a end point
+ctx.lineTo(200,100);
+
+ctx.moveTo(200,100);
+ctx,lineTo(200,150);
+
+ctx.moveTo(200,150);
+ctx.lineTo(250,180);
+
+// follow the path and create a uniqre by adding 5 more thing
+
+
+ctx.moveTo(180,250);
+ctx.lineTo(150,300);
+
+ctx.moveTo(150,300);
+ctx.lineTo(100,300);
+
+ctx.moveTo(100,300);
+ctx.lineTo(0,500);
+
+//Bigger
+ctx.lineWidth = 10;
+
+//color
+ctx.strokeStyle = "red";
+
+//Draw it
+ctx.stroke();
+</script>
+</body>
+</html>
